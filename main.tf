@@ -2,6 +2,7 @@ data "aws_caller_identity" "current" {
 }
 
 resource "aws_iam_user" "user" {
+  tags = var.tags
   name = var.name
 }
 
