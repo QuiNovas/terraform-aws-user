@@ -3,3 +3,8 @@ variable "name" {
   type        = string
 }
 
+variable "tags" {
+  description = "(Optional) A mapping of tags to assign to the resources"
+  type        = map(string)
+  default     = {}
+}
